@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link href="dummyjson.css" rel="stylesheet">
+</head>
+
+<body style="background-color:yellow;">
+<div>
+<center>
+    <h1 style="color:black;">Products</h1>
+</center>
+    <input type="text" class="search" placeholder="Search Here..." oninput="search();">
+    <button onclick="search();">Search</button>
+</div>
+<div id="res"></div>
+<template id="data">
+    <div class="card">
+        <center>
+            <h3 class="title"></h3>
+            <p class="des"></p>
+            <img class="img" alt="">
+        </center>
+    </div>
+</template>
+<center>
+<button class="button2" onclick="limitproducts()">LOAD MORE</button>
+</center>
+<script src="dummyjson.js"></script>
+</body>
+</html>

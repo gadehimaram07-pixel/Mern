@@ -1,0 +1,27 @@
+<html>
+  <body style="background-color: yellow">
+    <div>
+      <center>
+        <h1 style="color: black">DummyJson Products</h1>
+      </center>
+      <input
+        type="text"
+        class="search"
+        placeholder="Search Here..."
+        oninput="search()"
+      />
+      <button onclick="search()">Search</button>
+    </div>
+    <div id="res"></div>
+    <template id="data">
+      <div class="card">
+        <center>
+          <h3 class="title"></h3>
+          <p class="des"></p>
+          <img class="img" alt="" />
+        </center>
+      </div>
+    </template>
+  </body>
+  <script src="product.js"></script>
+</html>

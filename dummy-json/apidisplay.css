@@ -1,0 +1,11 @@
+.division{
+    border: 3px white solid;
+    color: white;
+    border-radius: 20px;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}

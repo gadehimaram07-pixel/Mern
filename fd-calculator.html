@@ -1,0 +1,91 @@
+<html>
+    <head>
+    </head>
+    <div class="container">
+    <body>
+        <h1 class="heading">FD Calculator</h1>
+        <p class="form"
+        >Interest Rate</p>
+        <input type="range" min="0" max="15" class="interest" oninput="update_interest();"><br>
+        <label for=""></label>
+        <label style="margin-left: 90px;" for=""></label>
+        <p class="interest-output">0</p>
+
+
+        <p class="form">Investment term</p>
+        <input type="range" min="6" max="24" class="term" oninput="update_investment_term();"><br>
+        <label for=""></label>
+        <label style="margin-left: 90px;" for=""></label>
+        <p class="term-output">6 Months</p>
+        
+        <p class="form">Deposit amount</p>
+        <input type="range" min="5000" max="100000" class="amount" oninput="update_amount();"><br>
+        <label for=""></label>
+        <label style="margin-left: 90px;" for=""></label>
+        <p class="amount-output">₹ 5,000</p>
+
+        <button class="calculate-btn" onclick="calculate_fd();">Calculate</button><br><br>
+        <div class="result"></div>
+    </body>
+</div>
+    <script>
+    let interest= 0;
+    let investment = 5000;
+    let term = 6;
+        
+    function update_interest() {
+        interest = parseFloat(document.querySelector(".interest").value);
+        document.querySelector(".interest-output").textContent = interest + "%";
+    }
+
+
+    function update_investment_term() {
+    term = parseFloat(document.querySelector(".term").value);
+    document.querySelector(".term-output").textContent = term + " Months";
+    }
+
+
+    function update_amount() {
+    investment = parseFloat(document.querySelector(".amount").value);
+    document.querySelector(".amount-output").textContent = "₹" + investment;
+    }
+
+    function calculate_fd() {
+        var result = investment + (investment * interest * term/100);
+        document.querySelector(".result").textContent = "₹" + result.toFixed(2);
+    }    
+    </script>
+<style>
+    .container {
+        align-items: center;
+        text-align: left;
+        color: white;
+        box-shadow: 10px 10px 5px grey;
+        background-color: #1a1a1a;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        width: 400px;
+        height: 500px;
+        margin: 60px auto;
+        }
+        .form{
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+        .heading{
+            color: Yellow;
+            font-size: 45px;
+            text-align: center;
+        }
+        .calculate-btn{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
+</html>

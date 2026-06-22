@@ -1,0 +1,83 @@
+.card{
+    border: 3px black solid;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 340px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+    border-color: white;
+}
+#res{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: center;
+}
+
+div {
+    margin: 20px;
+    text-align: right;
+}
+.search{
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    outline: none;
+    background-color: white;
+}
+
+
+.search:focus {
+    border-color: blue;
+}
+
+button {
+    padding:6px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    opacity: 0.9;
+}
+
+.button2 {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: 2px solid #000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button2:hover {
+    background-color: #555;
+    transform: translateY(-1px);
+}
+
+.button2:active {
+    opacity: 0.95;
+    transform: translateY(0);
+}

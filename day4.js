@@ -1,0 +1,27 @@
+/*str= "Hello World";
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.replace("World", "JavaScript"));
+console.log(str.split(" "));
+console.log(str.trim());
+console.log(str.charAt(0));
+console.log(str.startsWith("Hello"));
+console.log(str.endsWith("World"));
+name = "Himaram";
+console.log(`My name is ${name}`);
+*/
+let arr=[1,2,3];
+console.log(arr.push(4));
+console.log(arr.unshift(0));
+console.log(arr.pop());
+console.log(arr.shift());
+console.log(arr);
+console.log(arr.indexOf(2));
+let a=[1,2,3,["a","b","c"]];
+let b = [1,2,3,4,5];
+console.log(a[3][0]);
+console.log(a.lastIndexOf(2));
+console.log(arr.slice(1,3));
+console.log(arr.splice(1,2,190,200));
+console.log(arr);
