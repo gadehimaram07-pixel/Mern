@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: yellow;
+}
+
+body > div {
+    margin: 20px;
+    text-align: right;
+}
+
+#res {
+    display: grid;
+    justify-items: center;
+    padding: 0 20px 20px;
+}
+
+.card {
+    border: 3px black solid;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 340px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    background: yellow;
+    padding: 14px 16px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+    border-color: white;
+}
+
+.search {
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    outline: none;
+    background-color: white;
+}
+
+.search:focus {
+    border-color: blue;
+}
+
+button {
+    padding: 6px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    opacity: 0.9;
+}
+
+.title {
+    margin: 0 0 14px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.des {
+    margin: 0 0 18px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 300px;
+    object-fit: cover;
+}
